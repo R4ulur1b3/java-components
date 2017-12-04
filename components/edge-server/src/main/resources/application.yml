@@ -1,0 +1,14 @@
+#zuul.routes.a-bootiful-client.url=http://localhost:60490
+#zuul.routes.rest-blindaje.url=http://localhost:62457
+#ribbon.eureka.enabled=false
+#server.port=8090
+server:
+  port: 8090
+zuul:
+  routes:
+    a-bootiful-client:
+      path: /ws/** 
+      url: http://localhost:62469
+    rest-blindaje:
+      path: /rest-blindaje/**
+      url: http://localhost:62457

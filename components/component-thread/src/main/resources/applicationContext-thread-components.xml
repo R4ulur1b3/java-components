@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Beans Declaration -->
+    <bean id="TaskRunnable" class="mx.com.plinntec.thread.task.TaskRunnable"></bean>
+    
+    <bean id="ThreadPoolMonitorService" class="mx.com.plinntec.thread.service.impl.ThreadPoolMonitorService">
+        <property name="monitoringPeriod"  value="5" />
+    </bean>
+    
+    <bean id="TestRejectedExecutionHandler" class="mx.com.plinntec.thread.handler.TestRejectedExecutionHandler">
+    </bean>
+    <bean id="TestThreadPoolExecutorService" class="mx.com.plinntec.thread.service.impl.TestThreadPoolExecutorService">
+        <property name="corePoolSize"  value="1" />
+        <property name="maxPoolSize"   value="3" />
+        <property name="keepAliveTime" value="5" />
+        <property name="queueCapacity" value="3" />
+        <property name="testRejectedExecutionHandler" ref="TestRejectedExecutionHandler" />
+    </bean>
+    <bean id="Starter" class="mx.com.plinntec.thread.start.Starter">
+        <property name="threadPoolMonitorService" ref="ThreadPoolMonitorService" />
+        <property name="testThreadPoolExecutorService" ref="TestThreadPoolExecutorService" />
+    </bean>
+
+</beans>

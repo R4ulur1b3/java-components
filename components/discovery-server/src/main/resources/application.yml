@@ -1,0 +1,16 @@
+server:
+  port: 8761 #HTTP (Tomcat) puerto por defecto
+
+# Condifurar este Discovery server
+eureka:
+  instance:
+    hostname: localhost
+  client: # Debido a que no es un cliente NO se debe autoregistrar
+    register-with-eureka: false
+    fetch-registry: false
+    
+#Dicovery server DashBoard utiliza FreeMarker.
+
+spring:
+  thymeleaf:
+    enabled: false 

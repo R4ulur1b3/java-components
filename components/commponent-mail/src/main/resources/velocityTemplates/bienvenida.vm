@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+
+<html>
+<body>
+	<div id="header">
+		<img src="cid:id001">
+	</div>
+	
+	<div id="content">
+	
+		<table>
+			<tr>
+				<td><b>Hola ${nombre}</b></td>
+			</tr>
+			<tr>
+				<td><br/></td>
+			</tr>
+			<tr style="font-family: Arial; color: #4F5150;">
+				<td>
+					<b>Felicitaciones</b>
+				</td>
+			</tr>
+			<tr>
+				<td><br/></td>
+			</tr>
+			<tr>
+				<td>El correo de bienvenida ha llegado de manera satisfactoria.</td>
+			</tr>
+			<tr>
+				<td><br/></td>
+			</tr>
+		</table>
+		<br/>
+		<br/>
+		<br/>
+		<table style="width: 100%">	
+			<tr style="font-family: Arial; color: #4F5150; font-size:18px">
+				<td align="left"><b>Plinntec Recomienda:</b></td>
+			</tr>
+			<tr style="font-family: Arial; color: #4F5150; font-size:18px">
+				<td align="center"> Recomendación </td>
+			</tr>
+			<tr>
+				<td><br/></td>
+			</tr>
+			<tr style="font-family: Arial; color: #4F5150; font-size:18px">
+				<td align="center">  Una ventaja m&aacute;s de pertenecer a Plinntec.</td>
+			</tr>
+		</table>
+		<br/>
+		
+		<br/>		
+		<br/>
+		<br/>
+	</div>
+		
+	<div id="footer">
+		<table style="width: 100%">	
+			<tr style="color: #4F5150; font-family: Arial;">
+				<td align="center" colspan="2">Este es un mensaje generado de manera autom&aacute;tica por el sistema.</td>
+			</tr>
+			<tr style="font-family: Arial; color: #4F5150;">
+				<td align="center" colspan="2">Favor de no responder.</td>
+			</tr>			
+		</table>
+	</div>
+</body>
+</html>
