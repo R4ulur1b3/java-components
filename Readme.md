@@ -1,3 +1,4 @@
-COMPONENTES DE JAVA
+#COMPONENTES DE JAVA
 
-Este es un porjecto que tiene varios componentes de java exclusivamente de estudio.
+Este es un proyecto que tiene varios componentes de java exclusivamente de estudio.
+
